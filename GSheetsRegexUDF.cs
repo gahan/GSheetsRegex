@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using System.Runtime.InteropServices;
 using ExcelDna.Integration;
 using ExcelDna.IntelliSense;
@@ -36,6 +31,8 @@ namespace GSheetsRegex
         private const bool _MULTILINE = false;
         private const bool _RIGHTTOLEFT = false;
         private const bool _SINGLELINE = false;
+
+        // User defined function declarations
 
         public static object REGEXMATCH(
             [ExcelArgument(Name = "text", Description = "The text to be tested against the regular expression.")] string sSource,
